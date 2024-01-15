@@ -1,9 +1,8 @@
 import { connectKitStyle } from "@/styles/connectkit.style";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
-import { createConfig, WagmiConfig } from "wagmi";
-import { polygonMumbai } from "wagmi/chains";
+import { createConfig, sepolia, WagmiConfig } from "wagmi";
 
-const chains = [polygonMumbai];
+const chains = [sepolia];
 
 export default function FamilyProvider({
   children,
