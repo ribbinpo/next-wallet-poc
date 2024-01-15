@@ -188,8 +188,10 @@ function App() {
   );
 
   const execution = async () => {
-    const rpcUrl = "https://api.stackup.sh/v1/node/d7f0396602825b730050e66f23263dcf709cea531c6706bccf1fc1dc9edfa609";
-    const paymasterUrl = "https://api.stackup.sh/v1/paymaster/d7f0396602825b730050e66f23263dcf709cea531c6706bccf1fc1dc9edfa609";
+    // const rpcUrl = "https://api.stackup.sh/v1/node/d7f0396602825b730050e66f23263dcf709cea531c6706bccf1fc1dc9edfa609";
+    const rpcUrl = "https://public.stackup.sh/api/v1/node/ethereum-sepolia";
+    // const paymasterUrl = "https://api.stackup.sh/v1/paymaster/d7f0396602825b730050e66f23263dcf709cea531c6706bccf1fc1dc9edfa609";
+    const paymasterUrl = "";
     // Initialize paymaster middleware
     const paymasterContext = { type: "payg" };
     const paymasterMiddleware = Presets.Middleware.verifyingPaymaster(
